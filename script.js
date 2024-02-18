@@ -3,9 +3,10 @@
  let totalPrice = 0;
 
 const allBtn = document.getElementsByClassName('btn');
-
+   
 for(const btn of allBtn){
     btn.addEventListener('click', function(){
+      
         // set color///
         btn.classList.add('bg-green-500');
         /// set ticket--
@@ -60,6 +61,8 @@ for(const btn of allBtn){
 /// Apply Btn----
 const applyBtn = document.getElementById('apply-btn');
 applyBtn.addEventListener('click', function(){
+    /// remove Btn--
+    
     /// remove---
     showId('apply-btn')
 
@@ -77,11 +80,15 @@ applyBtn.addEventListener('click', function(){
         /// Grand total----
         const grandTotal = document.getElementById('grand-total');
         grandTotal.innerText = totalPrice - discount;
+        document.getElementById('input-box').value = '';
+
+        applyBtn.remove('input-box');
+        applyBtn.remove('apply-btn');
         
-        
+         
 
     }else{
-        alert('Invalid Code')
+        alert('Invalid copupon Code')
     }
 
 })
