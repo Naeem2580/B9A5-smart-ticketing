@@ -86,20 +86,20 @@ applyBtn.addEventListener('click', function(){
 
 })
 
-/// setBg color----
-function setBgColor(elementId){
-    const element = document.getElementById(elementId);
-    element.classList.add('bg-orange-400')
-}
-/// remove color----
-function removeColor(elementId){
-    const element = document.getElementById(elementId);
-    element.classList.remove('bg-orange-400')
-}
-
 
 /////////------------///
 function showId(elementId){
     const element = document.getElementById(elementId);
     element.classList.remove('hidden');
 }
+
+/// full btn---
+const fullBtn = document.getElementById('full-btn');
+fullBtn.addEventListener('click', function(){
+     
+    const addBox = document.getElementById('add-box');
+    addBox.classList.remove('hidden');
+    addBox.style.marginTop ='-500px'
+    addBox.style.marginRight ='350px'
+    
+})

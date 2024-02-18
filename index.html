@@ -232,7 +232,7 @@
                         <div class="btn p-5 ">I3</div>
                         <div class="btn p-5 ">I4</div>
                    </div>
-                    <div class="flex gap-24 justify-center items-center">
+                    <div class="flex gap-24 justify-center items-center ">
                         <h1 class="flex justify-center items-center text-center">J</h1>
                         <div class="btn p-5">J1</div>
                         <div class="btn p-5">J2</div>
@@ -291,10 +291,12 @@
                         </div>
                         <div class="space-y-3">
                             <h1>Email ID</h1>
-                            <input type="text" placeholder="Type here" class="input input-bordered input-accent w-full max-w-xs" />
+                            <label class="input input-bordered flex items-center gap-2">
+                                <input type="text" class="grow" placeholder="Email" />
+                              </label>
                         </div>
                         <div class=" mt-10 ">
-                            <button class="btn w-full bg-[#1DD100] text-white text-xl">next</button>
+                            <button id="full-btn" class="btn w-full bg-[#1DD100] text-white text-xl">next</button>
                         </div>
                         <div class="flex justify-between mt-20">
                             <a href="">Terms and Conditions</a>
@@ -307,6 +309,23 @@
 
              </section>
         </section>
+        <div id="add-box" class="flex justify-center items-center hidden">
+            <div class="card  bg-base-100 shadow-xl ">
+                <figure class="px-10 pt-10">
+                  <img src="images/success.png"  class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title text-2xl text-green-600">SUCCESS</h2>
+                  <p class=" font-semibold">Thank you for Booking Our Bus Seats. <br> 
+                    We are working hard to find the best service and deals for you. 
+                    .</p>
+                    <p> Shortly you will find a confirmation in your email.</p>
+                  <div class="card-actions">
+                    <button class="btn btn-success rounded-3xl w-64 ">continue</button>
+                  </div>
+                </div>
+              </div>
+        </div>
 
     </main>
     <!--Footer section-->
