@@ -72,7 +72,7 @@ applyBtn.addEventListener('click', function(){
     const input = inputBox.split(' ').join('').toUpperCase();
     console.log(input)
 
- 
+    
       
     
     if(input === 'NEW15'){
@@ -87,12 +87,11 @@ applyBtn.addEventListener('click', function(){
         grandTotal.innerText = totalPrice - discount;
         document.getElementById('input-box').value = '';
 
-        // applyBtn.remove('input-box');
-        // applyBtn.remove('apply-btn');
         showId('remove');
         
          
     }
+    
     else{
         alert('Invalid copupon Code')
     }
