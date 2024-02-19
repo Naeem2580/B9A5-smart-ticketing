@@ -1,12 +1,15 @@
  
  let count = 1
  let totalPrice = 0;
+;
 
 const allBtn = document.getElementsByClassName('btn');
    
 for(const btn of allBtn){
     btn.addEventListener('click', function(){
-      
+        console.log(btn.innerText)
+
+            
         // set color///
         btn.classList.add('bg-green-500');
         /// set ticket--
@@ -44,6 +47,7 @@ for(const btn of allBtn){
          const grandTotal = document.getElementById('grand-total')
          const  grandTotalPrice = grandTotal.innerText;
          const convertGranTotal = parseInt(grandTotalPrice);
+         grandTotal.innerText = totalPrice 
         //  console.log(convertGranTotal)
 
          /// Seats Left---
@@ -52,8 +56,6 @@ for(const btn of allBtn){
          const convertSeatsLeft = parseInt(seatsLeftText);
          const newSeatsLeft = convertSeatsLeft - 1;
          seatsLeft.innerText = newSeatsLeft;  
-
-         
 
     })
 }
@@ -69,6 +71,9 @@ applyBtn.addEventListener('click', function(){
     const inputBox = document.getElementById('input-box').value;
     const input = inputBox.split(' ').join('').toUpperCase();
     console.log(input)
+
+ 
+      
     
     if(input === 'NEW15'){
         //discount---
@@ -82,12 +87,13 @@ applyBtn.addEventListener('click', function(){
         grandTotal.innerText = totalPrice - discount;
         document.getElementById('input-box').value = '';
 
-        applyBtn.remove('input-box');
-        applyBtn.remove('apply-btn');
+        // applyBtn.remove('input-box');
+        // applyBtn.remove('apply-btn');
+        showId('remove');
         
          
-
-    }else{
+    }
+    else{
         alert('Invalid copupon Code')
     }
 
@@ -110,3 +116,9 @@ fullBtn.addEventListener('click', function(){
     addBox.style.marginRight ='350px'
     
 })
+
+
+function showId(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.add('hidden');
+}
