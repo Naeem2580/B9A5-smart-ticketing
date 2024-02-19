@@ -12,7 +12,7 @@
     <!---Header section-->
     <header>
         <!--Banner section-->
-        <div class="mx-32 mt-5">
+        <div class="lg:mx-32 mx-10 mt-5">
             <div class="navbar bg-base-100 ">
                 <div class="navbar-start">
                   <div class="dropdown">
@@ -37,7 +37,7 @@
               </div>
         </div>
         <!-- Img section-->
-        <div class="mx-32 mt-16 ">
+        <div class="lg:mx-32 mx-10 mt-16 ">
             <div class="hero min-h-screen rounded-3xl" style="background-image: url(images/banner.png);">
                 <div class="hero-overlay bg-opacity-60"></div>
                 <div class="hero-content text-center text-neutral-content">
@@ -57,7 +57,7 @@
     <!--Main section-->
     <main class="mt-16">
         <h1 class="text-center text-3xl font-bold mb-14">Best offers for you</h1>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mx-32 mt-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:mx-32 mx-10 mt-20">
             <!--card-->
             <div class="flex gap-5 px-20 bg-[#FFBF0F] rounded-xl justify-between items-center ">
                 <div class="">
@@ -91,26 +91,26 @@
         </div>
 
         <!---From section-->
-        <section class="bg-gray-400 mt-20  my-20 mx-14 rounded-t-3xl">
+        <section class="bg-gray-400 mt-20  my-20 lg:mx-14 mx-5 rounded-t-3xl">
              <div class=" text-center space-y-4 pt-16">
                 <h1 class="text-4xl font-extrabold">P.H Paribahan</h1>
                 <p>Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .</p>
              </div>
              <!--From Card-->
-             <div class="flex gap-10 bg-[#FFFFFF] rounded-2xl  mt-10 mx-32">
+             <div class="flex  lg:gap-10 bg-[#FFFFFF] rounded-2xl  mt-10 lg:mx-32 mx-10">
                 <div class="p-10  ">
-                    <div class="flex gap-36   ml-10">
+                    <div class="flex lg:gap-36 gap-7  ml-10">
                         <div class="flex justify-center items-center  gap-4">
                             <img class="h-10 w-10" src="images/bus-logo.png" alt="">
                             <div>
-                                <h1 class="text-3xl font-bold">Greenline Paribahan</h1>
+                                <h1 class="lg:text-3xl text:xl font-bold">Greenline Paribahan</h1>
                                 <p>Coach-009-WEB ! AC_Business</p>
                             </div>
                         </div>
                         <div class="">
                             <button class=" btn bg-green-200 text-green-400">
-                                <img src="images/bus-icon.png" alt="">
-                                <h1> <span id="seats-left">40</span> Seats left</h1>
+                                <img  src="images/bus-icon.png" alt="">
+                                <h1> <span id="seats-left">24</span> Seats left</h1>
                             </button>
                         </div>
                            
@@ -127,7 +127,7 @@
 
                         </div>
                         <hr>
-                        <div class="flex justify-between">
+                        <div class="grid grid-cols-1 lg:grid-cols-3 justify-between">
                             <button class="btn">Boarding Point - Laxmipur</button>
                             <button class="btn">Dropping Point - Bogura</button>
                             <button class="btn">Est. Time - 11 Hour</button>
@@ -135,21 +135,20 @@
 
                     </div>
                            
-                    
                 </div>
                 
-                <img class="" src="images/info-devider.png" alt="">
-                <div class="p-10 text-center space-y-4  my-auto">
+                <img class="w-20 lg:h-[450px] h-52" src="images/info-devider.png" alt="">
+                <div class="lg:p-10 text-center lg:space-y-4  my-auto">
                     <div>
                         <img src="images/fare.png" alt="">
                     </div>
-                    <h1 id="ticket-price" class="text-2xl font-bold"> 550Taka</h1>
+                    <h1 id="ticket-price" class="lg:text-2x text-sm font-bold"> 550Taka</h1>
                     <p>Per Seat</p>
                 </div>
              </div>
              
              <!--- New section----->
-             <section id="show-site" class="flex gap-20 py-5 px-5 mx-32 mt-10 bg-[#FFFFFF] rounded-xl ">
+             <section id="show-site" class="grid grid-cols-1 lg:grid-cols-2  gap-20 py-5 px-10 lg:mx-32 mx-10 mt-10 bg-[#FFFFFF] rounded-xl ">
                 <!--Left side-->
                 <div class="space-y-5">
                     <h1 class="text-3xl font-bold">Select Your Seat</h1>
@@ -169,49 +168,60 @@
                         <button class="btn"><img src="images/wheel.png" alt=""></button>
                     </div>
                     <!------>
-                    
-                    <div class="flex gap-24 justify-center items-center">
-                        <h1 class="flex justify-center items-center text-center">A</h1>
-                        <div class="btn p-5 ">A1</div>
-                        <div class="btn p-5 ">A2</div>
-                        <div class="btn p-5 ">A3</div>
-                        <div class="btn p-5 ">A4</div>
-                   </div>
-                    <div class="flex gap-24 justify-center items-center">
-                        <h1 class="flex justify-center items-center text-center">B</h1>
+                    <div class="flex justify-center items-center gap-3">
+                        <h1>A</h1>
+                        <div class="flex lg:gap-24 gap-5 justify-center items-center">
+                            <div class="btn p-5 ">A1</div>
+                            <div class="btn p-5 ">A2</div>
+                            <div class="btn p-5 ">A3</div>
+                            <div class="btn p-5 ">A4</div>
+                       </div>
+                    </div>
+                   <div class="flex justify-center items-center gap-3">
+                    <h1>B</h1>
+                    <div class="flex lg:gap-24 gap-5 justify-center items-center">
                         <div class="btn p-5 ">B1</div>
                         <div class="btn p-5 ">B2</div>
                         <div class="btn p-5 ">B3</div>
                         <div class="btn p-5 ">B4</div>
                    </div>
-                    <div class="flex gap-24 justify-center items-center">
-                        <h1 class="flex justify-center items-center text-center">C</h1>
-                        <div class="btn p-5 ">C1</div>
-                        <div class="btn p-5 ">C2</div>
-                        <div class="btn p-5 ">C3</div>
-                        <div class="btn p-5 ">C4</div>
                    </div>
-                    <div class="flex gap-24 justify-center items-center">
-                        <h1 class="flex justify-center items-center text-center">D</h1>
-                        <div class="btn p-5 ">D1</div>
-                        <div class="btn p-5 ">D2</div>
-                        <div class="btn p-5 ">D3</div>
-                        <div class="btn p-5 ">D4</div>
-                   </div>
-                    <div class="flex gap-24 justify-center items-center">
-                        <h1 class="flex justify-center items-center text-center">E</h1>
-                        <div class="btn p-5 ">E1</div>
-                        <div class="btn p-5 ">E2</div>
-                        <div class="btn p-5 ">E3</div>
-                        <div class="btn p-5 ">E4</div>
-                   </div>
-                    <div class="flex gap-24 justify-center items-center">
-                        <h1 class="flex justify-center items-center text-center">F</h1>
-                        <div class="btn p-5 ">F1</div>
-                        <div class="btn p-5 ">F2</div>
-                        <div class="btn p-5 ">F3</div>
-                        <div class="btn p-5 ">F4</div>
-                   </div>
+                    <div class="flex justify-center items-center gap-3">
+                        <h1>C</h1>
+                        <div class="flex lg:gap-24 gap-5 justify-center items-center">
+                            <div class="btn p-5 ">C1</div>
+                            <div class="btn p-5 ">C2</div>
+                            <div class="btn p-5 ">C3</div>
+                            <div class="btn p-5 ">C4</div>
+                       </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                        <h1>D</h1>
+                        <div class="flex lg:gap-24 gap-5 justify-center items-center">
+                            <div class="btn p-5 ">D1</div>
+                            <div class="btn p-5 ">D2</div>
+                            <div class="btn p-5 ">D3</div>
+                            <div class="btn p-5 ">D4</div>
+                       </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                        <h1>E</h1>
+                        <div class="flex lg:gap-24 gap-5 justify-center items-center">
+                            <div class="btn p-5 ">E1</div>
+                            <div class="btn p-5 ">E2</div>
+                            <div class="btn p-5 ">E3</div>
+                            <div class="btn p-5 ">E4</div>
+                       </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                        <h1>F</h1>
+                        <div class="flex lg:gap-24 gap-5 justify-center items-center">
+                            <div class="btn p-5 ">F1</div>
+                            <div class="btn p-5 ">F2</div>
+                            <div class="btn p-5 ">F3</div>
+                            <div class="btn p-5 ">F4</div>
+                       </div>
+                    </div>
                     
                 </div>
                 
